@@ -1,4 +1,4 @@
-name: CI - Vitest
+name: CI - MarcoGA
 
 on:
   push:
@@ -14,13 +14,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
+      - name: Instalar dependencias MGA
         run: npm install
 
-      - name: Run unit tests
+      - name: Ejecutar Test MGA
         run: npm run test:run
